@@ -1,4 +1,4 @@
-name: "FlickrStyleCaffeNet"
+name: "StanfordCarsNet"
 layer {
   name: "data"
   type: "Input"
@@ -310,10 +310,10 @@ layer {
   }
 }
 layer {
-  name: "fc8_flickr"
+  name: "fc8_stanford_cars"
   type: "InnerProduct"
   bottom: "fc7"
-  top: "fc8_flickr"
+  top: "fc8_stanford_cars"
   # lr_mult is set to higher than for other layers, because this layer is starting from random while the others are already trained
   param {
     lr_mult: 10
@@ -324,7 +324,7 @@ layer {
     decay_mult: 0
   }
   inner_product_param {
-    num_output: 20
+    num_output: 196
     weight_filler {
       type: "gaussian"
       std: 0.01
@@ -338,6 +338,6 @@ layer {
 layer {
   name: "prob"
   type: "Softmax"
-  bottom: "fc8_flickr"
+  bottom: "fc8_stanford_cars"
   top: "prob"
 }
