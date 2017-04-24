@@ -1,0 +1,21 @@
+net: "models/caffenet_stanford_cars/train_val.prototxt"
+test_iter: 100
+test_interval: 100
+# lr for fine-tuning should be lower than when starting from scratch
+base_lr: 0.001
+lr_policy: "multistep"
+gamma: 0.5
+# stepsize should also be lower, as we're closer to being done
+# original stepsize was 20000
+stepvalue: 3000
+stepvalue: 6000
+stepvalue: 12000
+stepvalue: 24000
+display: 50
+max_iter: 30000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 1000
+snapshot_prefix: "models/caffenet_stanford_cars/result_models/result"
+# uncomment the following to default to CPU mode solving
+# solver_mode: CPU
