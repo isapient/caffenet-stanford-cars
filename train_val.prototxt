@@ -13,7 +13,7 @@ layer {
     mean_file: "data/ilsvrc12/imagenet_mean.binaryproto"
   }
   image_data_param {
-    source: "data/stanford_cars/train.txt"
+    source: "data/stanford_cars/train_02_8144pcs.txt"
     batch_size: 50
     new_height: 256
     new_width: 256
@@ -33,7 +33,7 @@ layer {
     mean_file: "data/ilsvrc12/imagenet_mean.binaryproto"
   }
   image_data_param {
-    source: "data/stanford_cars/test.txt"
+    source: "data/stanford_cars/test_02_8041pcs.txt"
     batch_size: 50
     new_height: 256
     new_width: 256
