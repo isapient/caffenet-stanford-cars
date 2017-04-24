@@ -1,7 +1,7 @@
 ---
 name: Fine-tuning CaffeNet on Stanford Cars Dataset
-caffemodel: v092_result_iter_4000.caffemodel
-caffemodel_url: https://yadi.sk/d/s2CWUz7L3HHsER
+caffemodel: v093_result_iter_2000.caffemodel
+caffemodel_url: https://yadi.sk/d/DsMHZukX3HHzoG
 license: unrestricted
 sha1:
 ---
