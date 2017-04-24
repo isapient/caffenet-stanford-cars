@@ -17,7 +17,7 @@ The best accuracy is 0.5228 at 4250.
 The best stored to caffemodel is 0.517 at 4000 iteration.
 Next the accuracy will drop to 0.48 at 5000 iter, to 0.33 at 6000 and 0.0036 at 7000.
 The final accuracy at 30000 iteration is still 0.008.
-
+Result caffemodel: https://yadi.sk/d/s2CWUz7L3HHsER
 
 ## License
 
